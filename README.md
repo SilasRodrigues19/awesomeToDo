@@ -19,7 +19,7 @@
     Task list with localStorage.
     <br />
     <br />
-    <a href="#">Demo</a>
+    <a href="https://awesome-task-list.vercel.app">Demo</a>
     <a href="https://github.com/SilasRodrigues19/AwesomeTaskList/issues">Report Bug</a>
   </p>
 </p>
@@ -43,7 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Preview][product-screenshot]](https://github.com/SilasRodrigues19/AwesomeTaskList)
+[![Preview][product-screenshot]](https://awesome-task-list.vercel.app)
 
 Make your to do list, save and access anytime.
 
