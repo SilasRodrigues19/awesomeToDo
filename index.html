@@ -13,17 +13,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body>
+<body class="body-theme">
+    <nav class="navbar">
+        <div class="d-flex change-theme">
+            <i class="uil uil-moon" id="theme-toggle"></i>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="header">
             <h1>Your Awesome Task List</h1>
         </div>
         <div class="newTask">
             <input type="text" placeholder="Task to be done">
-            <button class="push">Add</button>
+            <button class="push">
+                <i class="uil uil-plus"></i>
+            </button>
         </div>
         <div class="tasks">
 
@@ -35,6 +44,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="assets/js/theme.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

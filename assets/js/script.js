@@ -32,6 +32,7 @@ push.addEventListener('click', () => {
   pushList();
 });
 
+
 const pushList = () => {
 
   if (input.value.length == 0) {
@@ -46,11 +47,11 @@ const pushList = () => {
 
   toastr.info("Task added successfully");
 
-  const array = JSON.parse(localStorage.getItem('lista')) || [];
+  const array = JSON.parse(localStorage.getItem('taskList')) || [];
 
 
   array.push(input.value);
-  localStorage.setItem('lista', JSON.stringify(array));
+  localStorage.setItem('taskList', JSON.stringify(array));
 
   taskList.innerHTML +=
     `
@@ -68,7 +69,7 @@ const pushList = () => {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  JSON.parse(localStorage.getItem('lista')).forEach((el) => {
+  JSON.parse(localStorage.getItem('taskList')).forEach((el) => {
     taskList.innerHTML +=
       `
      <div class="task">
@@ -94,14 +95,9 @@ window.addEventListener('DOMContentLoaded', () => {
   for (let i = 0; i < currentTasks.length; i++) {
     currentTasks[i].onclick = function () {
       this.parentNode.remove();
-      localStorage.removeItem('lista');
+      taskList.splice(index, 1);
+      localStorage.setItem('taskList', JSON.stringify(array));
       toastr.info("Task removed successfully");
     }
   }
 });
-
-
-
-
-
-
