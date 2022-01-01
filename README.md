@@ -44,6 +44,7 @@
 ## About The Project
 
 [![Preview][product-screenshot]](https://awesome-task-list.vercel.app)
+[![Preview][product-screenshot2]](https://awesome-task-list.vercel.app)
 
 Make your to do list, save and access anytime.
 
@@ -51,6 +52,7 @@ The website is one page only:
 * **Input**: enter a Task to be added.
 * **Task List Area**: display all tasks added, if clicked is marked as completed or not completed task.
 * **Delete Button**: delete the selected task and remove it from the task list.
+* **Moon Icon / Sun Icon**: toggle between dark and light mode.
 ### Built With
 
 Technologies used in the project.
@@ -60,6 +62,7 @@ Technologies used in the project.
 
 ### Libraries
 * [Iconify Design](https://iconify.design/)
+* [Unicons](https://iconscout.com/unicons/explore/line)
 * [toastr](https://codeseven.github.io/toastr/demo.html)
 
 ### Font Script
@@ -105,6 +108,7 @@ Project Link: [https://github.com/SilasRodrigues19/AwesomeTaskList](https://gith
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/AwesomeTaskList.svg?style=for-the-badge
 [license-url]: https://github.com/SilasRodrigues19/AwesomeTaskList/blob/master/LICENSE
 [product-screenshot]: ./assets/img/preview.png
+[product-screenshot2]: ./assets/img/preview2.png
 [license-url]: https://github.com/SilasRodrigues19/AwesomeTaskList/blob/master/LICENSE
 
 <br><hr>
