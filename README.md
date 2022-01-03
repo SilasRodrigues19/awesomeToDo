@@ -52,7 +52,7 @@ The website is one page only:
 * **Input**: enter a Task to be added.
 * **Task List Area**: display all tasks added, if clicked is marked as completed or not completed task.
 * **Delete Button**: delete the selected task and remove it from the task list.
-* **Moon Icon / Sun Icon**: toggle between dark and light mode.
+* **Moon Icon / Sun Icon**: toggle between dark and light mode. The last theme chosen will be saved to localStorage to be displayed on the next access.
 ### Built With
 
 Technologies used in the project.
