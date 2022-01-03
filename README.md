@@ -19,7 +19,7 @@
     To-do list with light/dark theme and saving to localStorage.
     <br />
     <br />
-    <a href="amazing-to-do-list.vercel.app">Demo</a>
+    <a href="https://amazing-to-do-list.vercel.app">Demo</a>
     <a href="https://github.com/SilasRodrigues19/To-Do-List/issues">Report Bug</a>
   </p>
 </p>
@@ -43,8 +43,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Preview][product-screenshot]](amazing-to-do-list.vercel.app)
-[![Preview][product-screenshot2]](amazing-to-do-list.vercel.app)
+[![Preview][product-screenshot]](https://amazing-to-do-list.vercel.app)
+[![Preview][product-screenshot2]](https://amazing-to-do-list.vercel.app)
 
 Make your to-do list, save and access anytime.
 
