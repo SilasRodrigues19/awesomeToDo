@@ -13,13 +13,13 @@
     <img src="./favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Awesome Task List</h3>
+  <h3 align="center">Amazing To-do list</h3>
 
   <p align="center">
-    Task list with localStorage.
+    To-do list with light/dark theme and saving to localStorage.
     <br />
     <br />
-    <a href="https://awesome-task-list.vercel.app">Demo</a>
+    <a href="amazing-to-do-list.vercel.app">Demo</a>
     <a href="https://github.com/SilasRodrigues19/AwesomeTaskList/issues">Report Bug</a>
   </p>
 </p>
@@ -43,10 +43,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Preview][product-screenshot]](https://awesome-task-list.vercel.app)
-[![Preview][product-screenshot2]](https://awesome-task-list.vercel.app)
+[![Preview][product-screenshot]](amazing-to-do-list.vercel.app)
+[![Preview][product-screenshot2]](amazing-to-do-list.vercel.app)
 
-Make your to do list, save and access anytime.
+Make your to-do list, save and access anytime.
 
 The website is one page only:
 * **Input**: enter a Task to be added.
