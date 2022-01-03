@@ -9,7 +9,7 @@
 <br />
 <samp>
 <p align="center">
-  <a href="https://github.com/SilasRodrigues19/AwesomeTaskList">
+  <a href="https://github.com/SilasRodrigues19/To-Do-List">
     <img src="./favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
@@ -20,7 +20,7 @@
     <br />
     <br />
     <a href="amazing-to-do-list.vercel.app">Demo</a>
-    <a href="https://github.com/SilasRodrigues19/AwesomeTaskList/issues">Report Bug</a>
+    <a href="https://github.com/SilasRodrigues19/To-Do-List/issues">Report Bug</a>
   </p>
 </p>
 
@@ -91,25 +91,25 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Silas Rodrigues - [@jinuye1](https://twitter.com/jinuye1) - silasrodrigues.fatec@gmail.com
 
-Project Link: [https://github.com/SilasRodrigues19/AwesomeTaskList](https://github.com/SilasRodrigues19/AwesomeTaskList) <br>
+Project Link: [https://github.com/SilasRodrigues19/To-Do-List](https://github.com/SilasRodrigues19/To-Do-List) <br>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/SilasRodrigues19/AwesomeTaskList.svg?style=for-the-badge
-[contributors-url]: https://github.com/SilasRodrigues19/AwesomeTaskList/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/SilasRodrigues19/AwesomeTaskList.svg?style=for-the-badge
-[forks-url]: https://github.com/SilasRodrigues19/AwesomeTaskList/network/members
-[stars-shield]: https://img.shields.io/github/stars/SilasRodrigues19/AwesomeTaskList.svg?style=for-the-badge
-[stars-url]: https://github.com/SilasRodrigues19/AwesomeTaskList/stargazers
-[issues-shield]: https://img.shields.io/github/issues/SilasRodrigues19/AwesomeTaskList.svg?style=for-the-badge
-[issues-url]: https://github.com/SilasRodrigues19/AwesomeTaskList/issues
-[license-shield]: https://img.shields.io/github/license/SilasRodrigues19/AwesomeTaskList.svg?style=for-the-badge
-[license-url]: https://github.com/SilasRodrigues19/AwesomeTaskList/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/SilasRodrigues19/To-Do-List.svg?style=for-the-badge
+[contributors-url]: https://github.com/SilasRodrigues19/To-Do-List/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/SilasRodrigues19/To-Do-List.svg?style=for-the-badge
+[forks-url]: https://github.com/SilasRodrigues19/To-Do-List/network/members
+[stars-shield]: https://img.shields.io/github/stars/SilasRodrigues19/To-Do-List.svg?style=for-the-badge
+[stars-url]: https://github.com/SilasRodrigues19/To-Do-List/stargazers
+[issues-shield]: https://img.shields.io/github/issues/SilasRodrigues19/To-Do-List.svg?style=for-the-badge
+[issues-url]: https://github.com/SilasRodrigues19/To-Do-List/issues
+[license-shield]: https://img.shields.io/github/license/SilasRodrigues19/To-Do-List.svg?style=for-the-badge
+[license-url]: https://github.com/SilasRodrigues19/To-Do-List/blob/master/LICENSE
 [product-screenshot]: ./assets/img/preview.png
 [product-screenshot2]: ./assets/img/preview2.png
-[license-url]: https://github.com/SilasRodrigues19/AwesomeTaskList/blob/master/LICENSE
+[license-url]: https://github.com/SilasRodrigues19/To-Do-List/blob/master/LICENSE
 
 <br><hr>
-[🔼 Back to top](#Awesome-Task-List)
+[🔼 Back to top](#Amazing-To-do-list)
