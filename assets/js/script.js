@@ -23,7 +23,7 @@ toastr.options = {
 }
 
 input.addEventListener("keydown", (e) => {
-  if (e.keyCode === 13) {
+  if (e.key === 'Enter') {
     pushList();
   }
 })
@@ -59,7 +59,7 @@ const pushList = () => {
       <span class="taskName">
         ${input.value}
       </span>
-      <button class="delete">
+      <button class="delete" onclick="functionX()">
         <span class="iconify" data-icon="fluent:delete-24-filled"></span>
       </button>
     </div>
@@ -72,32 +72,25 @@ window.addEventListener('DOMContentLoaded', () => {
   JSON.parse(localStorage.getItem('taskList')).forEach((el) => {
     taskList.innerHTML +=
       `
-     <div class="task">
+     <div class="task" onclick="maskAsDone()">
         <span class="taskName">
           ${el}
         </span>
-        <button class="delete">
+        <button class="delete" onclick="deleteTask()">
           <span class="iconify" data-icon="fluent:delete-24-filled"></span>
         </button>
     </div>
   `;
   });
 
+
+});
+
+const maskAsDone = () => {
   let tasksStatus = document.querySelectorAll('.task');
   for (let i = 0; i < tasksStatus.length; i++) {
     tasksStatus[i].onclick = function () {
       this.classList.toggle('completed');
     }
   }
-
-  let currentTasks = document.querySelectorAll('.delete');
-
-  for (let i = 0; i < currentTasks.length; i++) {
-    currentTasks[i].onclick = function () {
-      this.parentNode.remove();
-      taskList.splice(index, 1);
-      localStorage.setItem('taskList', JSON.stringify(array));
-      toastr.info("Task removed successfully");
-    }
-  }
-});
+}

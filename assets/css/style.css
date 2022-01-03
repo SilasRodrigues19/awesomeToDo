@@ -54,38 +54,40 @@ body {
 }
 
 .body-theme {
-  background-color: #0e0e0e;
+  background-color: #1f1f1f;
+  -webkit-transition: background-color .6s ease-out;
+  transition: background-color .6s ease-out;
 }
 
 .dark-theme {
+  -webkit-transition: background-color .6s ease-out;
+  transition: background-color .6s ease-out;
   background-color: #EDD2F3;
 }
 
 .dark-theme ::-webkit-input-placeholder {
-  color: #a88beb;
+  color: #746aff;
   opacity: .3;
 }
 
 .dark-theme :-ms-input-placeholder {
-  color: #a88beb;
+  color: #746aff;
   opacity: .3;
 }
 
 .dark-theme ::-ms-input-placeholder {
-  color: #a88beb;
+  color: #746aff;
   opacity: .3;
 }
 
 .dark-theme ::placeholder {
-  color: #a88beb;
+  color: #746aff;
   opacity: .3;
 }
 
 .dark-theme .navbar {
-  background-color: #EDD2F3;
-}
-
-.dark-theme .container {
+  -webkit-transition: background-color ease-out 1.1s;
+  transition: background-color ease-out 1.1s;
   background-color: #EDD2F3;
 }
 
@@ -93,16 +95,33 @@ body {
   color: rgba(1, 1, 1, 0.6);
 }
 
-.dark-theme .container .tasks, .dark-theme .container .newTask {
+.dark-theme .container .tasks {
   background-color: #EDD2F3;
+  -webkit-box-shadow: 3px 3px 105px rgba(101, 58, 150, 0.6), -3px -3px 105px transparent;
+          box-shadow: 3px 3px 105px rgba(101, 58, 150, 0.6), -3px -3px 105px transparent;
+}
+
+.dark-theme .container .tasks::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: transparent;
+}
+
+.dark-theme .container .newTask {
+  background-color: transparent;
 }
 
 .dark-theme .container .newTask input {
-  color: #a88beb;
+  color: #746aff;
 }
 
 .dark-theme .container .newTask button {
-  color: #a88beb;
+  color: #746aff;
 }
 
 .dark-theme .container .newTask button:hover {
@@ -110,11 +129,11 @@ body {
 }
 
 .dark-theme .task .taskName {
-  color: #a88beb !important;
+  color: #746aff !important;
 }
 
 .dark-theme .task .delete .iconify {
-  color: #a88beb;
+  color: #746aff;
 }
 
 .dark-theme .task .delete:hover .iconify {
@@ -130,15 +149,13 @@ body {
 }
 
 .dark-theme .toast-progress {
-  background: #a88beb;
+  background: #111;
 }
 
 .navbar {
-  background-color: #0e0e0e;
+  background-color: #1f1f1f;
   -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
-  -webkit-transition: .3s;
-  transition: .3s;
   position: fixed;
   width: 100%;
   height: 5%;
@@ -167,7 +184,7 @@ body {
   color: var(--textColor);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #a88beb;
+  color: #746aff;
 }
 
 .navbar .change-theme i:hover {
@@ -181,8 +198,6 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background: #0e0e0e;
-  border-radius: 92%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -218,7 +233,7 @@ body {
 .container .newTask {
   position: relative;
   border-radius: 46px;
-  background: #0e0e0e;
+  background: transparent;
   padding: 30px 20px;
   border-radius: 5px;
 }
@@ -231,7 +246,7 @@ body {
   font-size: 15px;
   border-radius: 5px;
   background: transparent;
-  border: 1px solid rgba(168, 139, 235, 0.5);
+  border: 2px solid rgba(116, 106, 255, 0.5);
   padding: 12px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
@@ -240,7 +255,51 @@ body {
 
 .container .newTask input:focus {
   outline: none;
-  border-color: rgba(168, 139, 235, 0.8);
+  border-color: rgba(116, 106, 255, 0.8);
+}
+
+.container .newTask input::-webkit-input-placeholder {
+  -webkit-transition: ease 5s;
+  transition: ease 5s;
+}
+
+.container .newTask input:-ms-input-placeholder {
+  -webkit-transition: ease 5s;
+  transition: ease 5s;
+}
+
+.container .newTask input::-ms-input-placeholder {
+  -webkit-transition: ease 5s;
+  transition: ease 5s;
+}
+
+.container .newTask input::placeholder {
+  -webkit-transition: ease 5s;
+  transition: ease 5s;
+}
+
+.container .newTask input:focus::-webkit-input-placeholder {
+  margin-right: 30rem;
+  -webkit-transition: margin-right ease 5s;
+  transition: margin-right ease 5s;
+}
+
+.container .newTask input:focus:-ms-input-placeholder {
+  margin-right: 30rem;
+  -webkit-transition: margin-right ease 5s;
+  transition: margin-right ease 5s;
+}
+
+.container .newTask input:focus::-ms-input-placeholder {
+  margin-right: 30rem;
+  -webkit-transition: margin-right ease 5s;
+  transition: margin-right ease 5s;
+}
+
+.container .newTask input:focus::placeholder {
+  margin-right: 30rem;
+  -webkit-transition: margin-right ease 5s;
+  transition: margin-right ease 5s;
 }
 
 .container .newTask button {
@@ -250,23 +309,19 @@ body {
   border-radius: 5px;
   border: none;
   font-family: 'Fira Sans', sans-serif;
-  border: 1px solid rgba(168, 139, 235, 0.5);
+  border: 2px solid rgba(116, 106, 255, 0.5);
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: ease background-color .5s;
-  transition: ease background-color .5s;
 }
 
 .container .newTask button:hover {
-  background-color: #a88beb;
-  -webkit-transition: ease background-color .5s;
-  transition: ease background-color .5s;
+  background-image: radial-gradient(circle 939px at 0.7% 2.4%, #746aff 0%, #dddddd 100.2%);
 }
 
 .container .tasks {
   position: relative;
-  background: #111;
+  background: #1f1f1f;
   -webkit-box-shadow: 3px 3px 105px rgba(168, 139, 235, 0.4), -3px -3px 105px transparent;
           box-shadow: 3px 3px 105px rgba(168, 139, 235, 0.4), -3px -3px 105px transparent;
   padding: 30px 20px;
@@ -291,13 +346,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid rgba(168, 139, 235, 0.5);
+  border-bottom: 1px solid rgba(116, 106, 255, 0.5);
   cursor: pointer;
 }
 
 .container .task .taskName {
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .container .task .iconify {
@@ -308,7 +363,7 @@ body {
 
 .container .task button {
   background: transparent;
-  border: 1px solid #a88beb;
+  border: 1px solid #746aff;
   color: #fff;
   height: 100%;
   width: 40px;
@@ -318,7 +373,7 @@ body {
 }
 
 .container .task button:hover {
-  background: #a88beb;
+  background: #746aff;
 }
 
 .completed {
@@ -332,6 +387,6 @@ body {
 }
 
 .toast-progress {
-  background: #a88beb;
+  background: #746aff;
 }
 /*# sourceMappingURL=style.css.map */
