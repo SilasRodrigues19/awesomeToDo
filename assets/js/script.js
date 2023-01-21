@@ -35,6 +35,7 @@ push.addEventListener('click', () => {
 
 const pushList = () => {
 
+
   if (input.value.length == 0) {
     toastr.error("Please enter a task");
     return;
@@ -49,48 +50,58 @@ const pushList = () => {
 
   const array = JSON.parse(localStorage.getItem('taskList')) || [];
 
-
   array.push(input.value);
   localStorage.setItem('taskList', JSON.stringify(array));
 
   taskList.innerHTML +=
     `
-    <div class="task">
+    <div class="task" id="task-${array.length}">
       <span class="taskName">
         ${input.value}
       </span>
-      <button class="delete" onclick="functionX()">
+      <button class="delete" onclick="deleteTask(${array.length})">
         <span class="iconify" data-icon="fluent:delete-24-filled"></span>
       </button>
     </div>
   `
 
+  taskList.addEventListener('click', (event) => {
+    if (event.target.classList.contains('task')) {
+      event.target.classList.toggle('completed');
+    }
+  });
+
   input.value = "";
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  JSON.parse(localStorage.getItem('taskList')).forEach((el) => {
+  JSON.parse(localStorage.getItem('taskList')).forEach((el, index) => {
     taskList.innerHTML +=
       `
-     <div class="task" onclick="maskAsDone()">
+     <div class="task" id="task-${index}">
         <span class="taskName">
           ${el}
         </span>
-        <button class="delete" onclick="deleteTask()">
+        <button class="delete" onclick="deleteTask(${index})">
           <span class="iconify" data-icon="fluent:delete-24-filled"></span>
         </button>
     </div>
   `;
   });
-
-
+  taskList.addEventListener('click', (event) => {
+    if (event.target.classList.contains('taskName')) {
+      event.target.classList.toggle('completed');
+    }
+  });
 });
 
-const maskAsDone = () => {
-  let tasksStatus = document.querySelectorAll('.task');
-  for (let i = 0; i < tasksStatus.length; i++) {
-    tasksStatus[i].onclick = function () {
-      this.classList.toggle('completed');
-    }
-  }
+
+const deleteTask = (index) => {
+  let taskList = JSON.parse(localStorage.getItem('taskList'));
+  taskList.splice(index, 1);
+  localStorage.setItem('taskList', JSON.stringify(taskList));
+  document.querySelector(`#task-${index}`).remove();
+
+  toastr.error("Task deleted successfully");
+
 }
